@@ -12,22 +12,16 @@
   </head>
 
   <body>
-    <h1>Ping Pong game is On</h1>
-    <form class="input" action="index.html" method="post">
-      <label for="">What number do you want to count to?</label>
-      <input id="countUpTo" type="form" name="countTo" value="">
-      <button class="btn btn-success"type="submit" name="button">Submit</button>
-      <!--<label for="countUpTo">Enter a number to play pingpong</label>
-      <input id="countUpTo" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
-      <button class="btn btn-success"type="submit" name="button">Submit</button>-->
-    </form>
-
-    <div>
-      <h4>And we're off!</h4>
-      <p><span class="boo"></span></p>
+    <div class="container">
+      <h1>Ping Pong game is On</h1>
+      <form class="input" action="index.html" method="post">
+        <label for="countUpTo">What number do you want to count to?</label>
+        <input id="countUpTo" type="form" name="countTo" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+        <button class="btn btn-success"type="submit" name="button">Submit</button>
+      </form>
     </div>
 
-    <div>
+    <div class="container">
       <ul>
         <div id="results">
         </div>
