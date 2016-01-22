@@ -12,8 +12,25 @@
   </head>
 
   <body>
-    <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://github.com/joseph-arnstein">J Money Pizzles and HTMizzLes</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://github.com/joseph-arnstein/pingpong">Thiz repizzle</a></li>
+          <li><a href="https://github.com/joseph-arnstein/pig-latin">A Repizzle</a></li>
+          <li><a href="https://github.com/joseph-arnstein/counting-by">Sum uthr shizzle</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container" id = "contents">
+      <img src="img/pingpic.jpg">
       <h1>Ping Pong game is On</h1>
+      <h4>You want to dance?</h4>
+      <p>Enter a number that you would like to count to.<br> Every time Ping Pong reaches a multiple of 3 . . . <br> <strong>PING!</strong><br> Every time it's a multiple of 5 <br><em>PONG!</em><br>THe only exception is multiple of 15. What could possible happen then?</p>
+      <h4>Find out</h4>
       <form class="input" action="index.html" method="post">
         <label for="countUpTo">What number do you want to count to?</label>
         <input id="countUpTo" type="form" name="countTo" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
@@ -27,5 +44,6 @@
         </div>
       </ul>
     </div>
+
   </body>
 </html>
