@@ -17,9 +17,11 @@ $(document).ready(function() {
   $("form.input").submit(function(event){
     var countUpTo = parseInt($("input#countUpTo").val());
   //  var printMe = [];
-    var printMe = pingpong(countUpTo);
-    $(".results").append(printMe);
-  })
+    var printMeArray = pingpong(countUpTo);
+    var printMeString = printMeArray.toString().replace(/,/g, " ");
+    $(".boo").text(printMeString);
+
   //$("#result").show();
   event.preventDefault();
+  })
 });
