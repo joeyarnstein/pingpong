@@ -15,12 +15,13 @@ var pingpong = function(countTo){
 
 $(document).ready(function() {
   $("form.input").submit(function(event){
+    $( "#results" ).empty();
     var countUpTo = parseInt($("input#countUpTo").val());
     var printMeArray = pingpong(countUpTo);
     printMeArray.forEach(function(word) {
       var tempArray = ["<li>", word, "</li>"];
       var tempString = tempArray.toString().replace(/,/g, "");
-      $("ul#results").append(tempString);
+      $("#results").append(tempString);
     })
   event.preventDefault();
   })
