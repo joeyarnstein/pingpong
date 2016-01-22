@@ -12,3 +12,14 @@ var pingpong = function(countTo){
     }
   return returnArray;
 }
+
+$(document).ready(function() {
+  $("form.input").submit(function(event){
+    var countUpTo = parseInt($("input#countUpTo").val());
+  //  var printMe = [];
+    var printMe = pingpong(countUpTo);
+    $(".results").append(printMe);
+  })
+  //$("#result").show();
+  event.preventDefault();
+});
