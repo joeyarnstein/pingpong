@@ -16,12 +16,12 @@ var pingpong = function(countTo){
 $(document).ready(function() {
   $("form.input").submit(function(event){
     var countUpTo = parseInt($("input#countUpTo").val());
-  //  var printMe = [];
     var printMeArray = pingpong(countUpTo);
-    var printMeString = printMeArray.toString().replace(/,/g, " ");
-    $(".boo").text(printMeString);
-
-  //$("#result").show();
+    printMeArray.forEach(function(word) {
+      var tempArray = ["<li>", word, "</li>"];
+      var tempString = tempArray.toString().replace(/,/g, "");
+      $("ul#results").append(tempString);
+    })
   event.preventDefault();
   })
 });
