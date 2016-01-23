@@ -15,3 +15,8 @@ body {
 #contents {
   background-color: white;
 }
+
+#booyah {
+  display: none;
+  background-color: yellow;
+}

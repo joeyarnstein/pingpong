@@ -19,6 +19,7 @@ var pingpong = function(countTo){
 
 $(document).ready(function() {
   $("form.input").submit(function(event){
+    $("#booyah").show();
     $( "#results" ).empty();
     var countUpTo = parseInt($("input#countUpTo").val());
     var printMeArray = pingpong(countUpTo);
